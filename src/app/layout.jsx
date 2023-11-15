@@ -1,14 +1,22 @@
+import Header from '@/components/Header';
 import './globals.css'
-
-export const metadata = {
-  title: 'The Movie Database',
-  description: 'IMDB Clone App',
-}
+import Providers from './Providers';
+import Navbar from '@/components/Navbar';
 
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-     <body >{children}</body>
+      <body >
+        <Providers>
+          {/* header*/}
+          <Header />
+          {/* nav bar*/}
+          <Navbar />
+          {/* search box*/}
+          {children}
+        </Providers>
+        
+      </body>
     </html>
   );
 }
