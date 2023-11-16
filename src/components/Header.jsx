@@ -18,7 +18,7 @@ export default function Header() {
         <DarkModeSwitch />
         <Link href='/'>
           <h2 className='2xl flex'>
-            <span className='font-bold bg-amber-500 py-2 px-2 rounded-lg border border-solid border-gray-800'>Data Base</span>
+            <span className='font-bold bg-amber-500 py-2 px-2 rounded-lg border border-solid border-gray-800'>The Movie DB</span>
           </h2>
         </Link>
       </div>
